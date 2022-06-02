@@ -19,4 +19,5 @@ class AsyncThumbnailMixin(object):
 
     def save(self, *args, **kwargs):
         super(AsyncThumbnailMixin, self).save(*args, **kwargs)
-        self.call_upload_task()
+        if bool(getattr(self, self.image_field_name)):
+            self.call_upload_task()
