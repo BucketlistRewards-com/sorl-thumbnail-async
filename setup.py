@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-version = '0.6.0'
+version = '0.6.1'
 
 setup(
     name='sorl-thumbnail-async',
@@ -19,6 +19,7 @@ setup(
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.3',
         'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.8',
         'Topic :: Software Development :: Libraries :: Python Modules',
         'Framework :: Django',
         'Environment :: Web Environment',
