@@ -1,9 +1,9 @@
-import celery
+from blcorp.celery import app
 
 from sorl.thumbnail import default
 from sorl.thumbnail.images import ImageFile
 
-@celery.task
+@app.task
 def create_thumbnail(image_file, geometry_string, **options):
     # Note that thumbnail options must be same for a type of thumbnail.
     # Otherwise, different thumbnails are created.
